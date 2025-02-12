@@ -1,7 +1,7 @@
+val divideTreasure = { totalTreasureKwd: Double, numberOfExplorers: Double -> totalTreasureKwd % numberOfExplorers }
 
 fun main() {
 
-//    val divideTreasure: (totalTreasureKwd: Double, numberOfExplorers: Double) -> Double = totalTreasureKwd % numberOfExplorers
-
+    println(divideTreasure(5.2,3.0))
 
 }
