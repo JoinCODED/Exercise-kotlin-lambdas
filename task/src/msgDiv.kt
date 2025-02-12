@@ -2,9 +2,10 @@
 fun main() {
     println(diveMessage("deep sea"))
 }
+
+val diveMessage: (String) -> String = { msg -> msg.loud() }
+
 fun String.loud(): String {
     return this.uppercase() + "!"
 }
-
-// Define the lambda function outside any other function
-val diveMessage: (String) -> String = { msg -> msg.loud() }
+//extending function loud to an existing class String
