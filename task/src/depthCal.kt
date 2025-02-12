@@ -1,6 +1,5 @@
 fun main() {
-    val depth = calculateDepth(1500, 800) { x, y -> x - y }
-    println(depth)
+    println(calculateDepth(1500, 800) { x, y -> x - y })
 }
 
 fun calculateDepth(x: Int, y: Int, differance: (Int, Int) -> Int): Int {
