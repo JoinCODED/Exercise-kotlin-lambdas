@@ -1,10 +1,11 @@
-// val findPearl: (numberOfPearls: Int) -> Int =
+
+val findPearl = { numberOfPearls: Int -> numberOfPearls* numberOfPearls }
 
 
 
 fun main() {
 
-  //  findPearl(5)
+    println(findPearl(5))
 
 
 }
