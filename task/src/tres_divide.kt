@@ -1,4 +1,4 @@
 fun main(){
-    println(divideTreasure(1000.0,5.0))
+    println(divideTreasure(1000.0,5))
 }
-val divideTreasure: (Double, Double) -> Double = { tres, expNum -> tres/expNum }
+val divideTreasure: (Double, Int) -> Double = { tres, explorerNum -> tres/explorerNum }
