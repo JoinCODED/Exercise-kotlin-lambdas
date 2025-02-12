@@ -1,8 +1,20 @@
 fun main() {
+    // part 1
     val greetSeaCreatures = {println("Hello, Deep Sea Adventurer!")}
     greetSeaCreatures()
+
+    // part 2
     val findPearl = {numPearls: Int -> numPearls * numPearls};
     println(findPearl(6));
+
+    // part 3
     val divideTreasure = {totalTreasure: Double, numExplorers: Double -> totalTreasure / numExplorers};
     println(divideTreasure(1000.0, 5.0));
+
+    // part 4
+    println(calculateDepth(1500, 800) {a, b -> a - b});
+}
+
+fun calculateDepth(location1: Int, location2: Int, operation: (Int, Int) -> Int): Int {
+    return operation(location1, location2);
 }
