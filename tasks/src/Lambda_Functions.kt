@@ -13,8 +13,16 @@ fun main() {
 
     // part 4
     println(calculateDepth(1500, 800) {a, b -> a - b});
+
+    // part 5
+    val diveMessage = {message: String -> message.loud()};
+    println(diveMessage("deep sea"));
 }
 
 fun calculateDepth(location1: Int, location2: Int, operation: (Int, Int) -> Int): Int {
     return operation(location1, location2);
+}
+
+fun String.loud(): String {
+    return "${this.uppercase()}!"
 }
