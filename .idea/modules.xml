@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/exercise.iml" filepath="$PROJECT_DIR$/exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lambdas1/lambdas1.iml" filepath="$PROJECT_DIR$/lambdas1/lambdas1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lambdas2/lambdas2.iml" filepath="$PROJECT_DIR$/lambdas2/lambdas2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lambdas3/lambdas3.iml" filepath="$PROJECT_DIR$/lambdas3/lambdas3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lambdas4/lambdas4.iml" filepath="$PROJECT_DIR$/lambdas4/lambdas4.iml" />
     </modules>
   </component>
 </project>
