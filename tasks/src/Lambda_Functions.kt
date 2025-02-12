@@ -1,3 +1,5 @@
+import kotlin.random.Random
+
 fun main() {
     // part 1
     val greetSeaCreatures = {println("Hello, Deep Sea Adventurer!")}
@@ -17,6 +19,11 @@ fun main() {
     // part 5
     val diveMessage = {message: String -> message.loud()};
     println(diveMessage("deep sea"));
+
+    // bonus
+    exploreWaters {println("Exploring the unknown depths...")};
+
+
 }
 
 fun calculateDepth(location1: Int, location2: Int, operation: (Int, Int) -> Int): Int {
@@ -25,4 +32,13 @@ fun calculateDepth(location1: Int, location2: Int, operation: (Int, Int) -> Int)
 
 fun String.loud(): String {
     return "${this.uppercase()}!"
+}
+
+inline fun exploreWaters(action: () -> Unit) {
+    var startTime: Double = Random.nextDouble(0.0, 600.0);
+    var endTime: Double = Random.nextDouble(800.0, 1200.0);
+    action();
+    println("Time Taken: ${String.format("%.2f", (endTime - startTime))} milliseconds");
+
+
 }
