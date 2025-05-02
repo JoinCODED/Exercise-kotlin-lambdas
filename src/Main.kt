@@ -1,3 +1,11 @@
+
+val greetSeaCreatures = { println("Hello, Deep Sea Adventurer!") }
+
+
+
+
+
 fun main() {
-    println("Hello World!")
+    greetSeaCreatures();
 }
+
